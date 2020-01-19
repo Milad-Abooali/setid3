@@ -1,0 +1,190 @@
+@import url("fonts.css");
+body,h1,h2,h3,h4,h5,h6,p {
+letter-spacing: unset;
+font-family:codeboxFA;
+direction:rtl;
+}
+#down p,#footerp,#left ul,#right li a,#left span,#right span:first-of-type{
+	text-align: center;
+}
+#page {
+	width: 90%;
+	margin: 0% auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	height: 600px;
+	box-shadow: 0 -5px 8px -10px black;
+	border-bottom: 0.5px solid #e4e4e4;
+}
+#left{
+	border: 0.5px solid #e4e4e4;
+	width: 15%;
+	margin: 2.5% 0 2% 2%;
+	float: left;
+	height: auto;
+	box-shadow: 0 -5px 15px -10px black;
+}
+#right{
+	width: 78.5%;
+	margin: 2.5% 0px 0 2%;
+	float: left;
+	height: 70%;
+	border: 0.5px solid #e4e4e4;
+	box-shadow: 0 -5px 15px -10px black;
+}
+#down{
+	float: left;
+	width: 96%;
+	border: 0.5px solid #e4e4e4;
+	margin: 3% 0 2% 2%;
+	height: 12%;
+	box-shadow: 0px -3px 16px -4px #c3c3c3;
+
+}
+#content{
+	text-align: center;
+	float: right;
+	padding: 0 25px;
+	height: 78.5%;
+	box-shadow: 0 -2px 8px -7px black;
+	min-width: 100%;
+}
+#content p:first-of-type{
+	line-height: 30px;
+	font-size: 14px;
+	height: 90%;
+}
+#footerp{
+	box-shadow: 0 -3px 6px -6px black;
+	width: 80%;
+	margin: 0 10%;
+	float: left;
+}
+#down p{
+	margin: 1% 1%;
+	color: #a5a3a3 !Important;
+}
+	/***************start vertical menu***************/
+#left ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #f1f1f1;
+	direction: rtl;
+}
+
+#left li h5 {
+	background: #e7e7e7;
+	font-size: 1.1em;
+	padding: 0;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 1px 0;
+	font-weight: 200;
+	margin: 0;
+}
+#left li:not(:first-child) h5 {
+	margin: 15px 0 0 0;
+}
+#left li a {
+	display: block;
+	color: #6e6e6e;
+	padding: 4px 0;
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+
+#left li a.active {
+	border-right:9px solid #D72B07;
+}
+
+#left li a:hover:not(.active) {
+	background-color: #A52206;
+	color: white;
+}
+	/************end virtical menu*******************/
+	/***************start horizonal menu***************/
+#right ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	width: 75%;
+	float: right;
+}
+
+#right li {
+	float: left;
+	border-right:1px solid #bbb;
+	width: 8.1%;
+}
+
+#right li:last-child {
+	border-right: none;
+}
+
+#right li a {
+	display: block;
+	color: #6e6e6e;
+	padding: 14px 0;
+	text-decoration: none;
+	font-family: tahoma;
+}
+
+#right li a:hover:not(.active) {
+	color: #D72B07;
+}
+
+#right .active {
+	background-color: #A52206;
+	color: #fff;
+}
+/************end horizonal menu*******************/
+/***********spans*****************/
+#right span:first-of-type{
+	display: inline-block;
+	color: #000;
+	width: 145px;
+    padding: 6px 12px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+@-moz-document url-prefix() {
+	#left li a{
+		padding: 5px 0;
+	}
+	#down{
+		height: 10%;
+	}
+}
+.button:hover {
+	background-color: #15c61f;
+	color: #000000;
+}
+.button {
+	background-color: #15c61f;
+	border: none;
+	color: #fff!important;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+.button:hover {
+	background-color: #15c61f;
+	color: #000!important;
+}
+#content>div {
+	display: inline-block;
+}
+.uploader {
+	    border: 2px dashed #aaa;
+    margin: 15px;
+    padding: 25px;
+    text-align: center;
+}
